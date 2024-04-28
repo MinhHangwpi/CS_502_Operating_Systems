@@ -1,0 +1,11 @@
+starting read mode with read size: 1024 bytes
+File size: 2807573 bytes
+Strings of at least length 4: 69833
+Maximum string length: 300 bytes
+CPU Time Used (User + System): 10ms
+Elapsed Wall-Clock Time: 12ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 1ms
+Major Page Faults: 0
+Minor Page Faults: 76
+Maximum Resident Set Size: 1536KB

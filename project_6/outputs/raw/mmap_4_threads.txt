@@ -1,0 +1,11 @@
+starting mmap mode with 4 threads
+File size: 2807573 bytes
+Strings of at least length 4: 69833
+Maximum string length: 300 bytes
+CPU Time Used (User + System): 9ms
+Elapsed Wall-Clock Time: 6ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 12ms
+Major Page Faults: 0
+Minor Page Faults: 543
+Maximum Resident Set Size: 5632KB
