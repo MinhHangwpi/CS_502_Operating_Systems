@@ -1,0 +1,121 @@
+Script started on 2024-01-16 12:40:23-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="238" LINES="16"]
+hang@hang-HP-Pavilion-Aero-Laptop-13z-be200:~/Documents/CS502_OS/project_1$ make clean
+rm -rf obj doit
+hang@hang-HP-Pavilion-Aero-Laptop-13z-be200:~/Documents/CS502_OS/project_1$ ls
+foo.txt  main.c  Makefile  stack.c  stack.h  typescript
+hang@hang-HP-Pavilion-Aero-Laptop-13z-be200:~/Documents/CS502_OS/project_1$ make
+mkdir -p obj
+gcc -c main.c -o obj/main.o
+gcc -c stack.c -o obj/stack.o
+gcc obj/main.o obj/stack.o -o doit
+hang@hang-HP-Pavilion-Aero-Laptop-13z-be200:~/Documents/CS502_OS/project_1$ ls
+doit  foo.txt  main.c  Makefile  obj  stack.c  stack.h  typescript
+hang@hang-HP-Pavilion-Aero-Laptop-13z-be200:~/Documents/CS502_OS/project_1$ ./doit wc foo.txt
+  3  69 448 foo.txt
+CPU Time Used (User + System): 1ms
+Elapsed Wall-Clock Time: 1ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 1ms
+Major Page Faults: 0
+Minor Page Faults: 104
+Maximum Resident Set Size: 2048KB
+hang@hang-HP-Pavilion-Aero-Laptop-13z-be200:~/Documents/CS502_OS/project_1$ ./doit
+==> date
+Tue Jan 16 12:41:22 PM EST 2024
+CPU Time Used (User + System): 1ms
+Elapsed Wall-Clock Time: 1ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 1ms
+Major Page Faults: 0
+Minor Page Faults: 100
+Maximum Resident Set Size: 2176KB
+==> cd obj
+Changed to directory: /home/hang/Documents/CS502_OS/project_1/obj
+==> cd ../
+Changed to directory: /home/hang/Documents/CS502_OS/project_1
+==> ls
+doit  foo.txt  main.c  Makefile  obj  stack.c  stack.h	typescript
+CPU Time Used (User + System): 5ms
+Elapsed Wall-Clock Time: 2ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 4ms
+Major Page Faults: 0
+Minor Page Faults: 422
+Maximum Resident Set Size: 2560KB
+==> set prompt = myprompt:
+myprompt:pwd
+/home/hang/Documents/CS502_OS/project_1
+CPU Time Used (User + System): 6ms
+Elapsed Wall-Clock Time: 1ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 5ms
+Major Page Faults: 0
+Minor Page Faults: 522
+Maximum Resident Set Size: 2560KB
+myprompt:exit
+hang@hang-HP-Pavilion-Aero-Laptop-13z-be200:~/Documents/CS502_OS/project_1$ ./doit
+==> sleep 7 &
+[1] 15529
+==> jobs
+[1] 15529 sleep
+==> ls
+doit  foo.txt  main.c  Makefile  obj  stack.c  stack.h	typescript
+CPU Time Used (User + System): 1ms
+Elapsed Wall-Clock Time: 1ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 1ms
+Major Page Faults: 0
+Minor Page Faults: 122
+Maximum Resident Set Size: 2560KB
+==> cat foo.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.CPU Time Used (User + System): 2ms
+Elapsed Wall-Clock Time: 1ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 2ms
+Major Page Faults: 0
+Minor Page Faults: 221
+Maximum Resident Set Size: 2560KB
+[1] 15529 sleep - Completed
+CPU Time Used (User + System): 4ms
+Elapsed Wall-Clock Time: 28588ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 4ms
+Major Page Faults: 0
+Minor Page Faults: 319
+Maximum Resident Set Size: 2560KB
+==> sleep 8 &
+[1] 15756
+==> sleep 9 &
+[2] 15770
+==> jobs
+[1] 15756 sleep
+[2] 15770 sleep
+==> exit
+Cannot exit the shell: 2 running background jobs
+==> jobs
+[1] 15756 sleep
+[2] 15770 sleep
+[1] 15756 sleep - Completed
+CPU Time Used (User + System): 6ms
+Elapsed Wall-Clock Time: 51077ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 6ms
+Major Page Faults: 0
+Minor Page Faults: 416
+Maximum Resident Set Size: 2560KB
+[1] 15770 sleep - Completed
+CPU Time Used (User + System): 8ms
+Elapsed Wall-Clock Time: 47292ms
+Involuntary Context Switches: 0ms
+Voluntary Context Switches: 8ms
+Major Page Faults: 0
+Minor Page Faults: 514
+Maximum Resident Set Size: 2560KB
+==> exit
+hang@hang-HP-Pavilion-Aero-Laptop-13z-be200:~/Documents/CS502_OS/project_1$ exit
+exit
+
+Script done on 2024-01-16 12:44:52-05:00 [COMMAND_EXIT_CODE="0"]
