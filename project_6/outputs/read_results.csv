@@ -1,0 +1,6 @@
+read_size,file_size,num_strings,max_length,cpu_time,wall_clock_time,involuntary_context_switches,voluntary_context_switches,major_page_faults,minor_page_faults,max_rss
+1024,2807573,4,300,12,12,0,1,0,73,1536
+1,2807573,4,300,1776,1778,3,4,2,70,1536
+2048,2807573,4,300,10,11,0,1,0,71,1536
+4096,2807573,4,300,10,11,0,1,0,73,1536
+8192,2807573,4,300,11,11,1,1,0,76,1536

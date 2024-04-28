@@ -1,0 +1,6 @@
+num_threads,file_size,num_strings,max_length,cpu_time,wall_clock_time,involuntary_context_switches,voluntary_context_switches,major_page_faults,minor_page_faults,max_rss
+16,2807573,4,300,14,11,2,76,0,481,4224
+1,2807573,4,300,10,10,7,2,0,438,5376
+2,2807573,4,300,7,7,0,5,0,473,5376
+4,2807573,4,300,10,5,4,23,0,547,5632
+8,2807573,4,300,9,4,0,29,0,683,6016
